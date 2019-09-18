@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>     
+    
+    <title>Explore Assignments</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index1.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ">
+              <li class="nav-item dropdown dropright ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us</a>
+                      <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item accordion" id="accordion" role="button" data-toggle="dropdown" aria-multiselectable="true">Students</a>
+                      <div class="panel">
+                          <ul>
+                              <li><a class="button button2" href="students.html">Add Student</a></li>
+                              <li><a class="button button2" href="editStudent.html">Edit Student</a></li>
+                              <li><a class="button button2" href="deleteStudent.html">Delete Student</a></li>
+                              <li><a class="button button2" href="studentsPerCourse.html">Students Per Course</a></li>
+                              <li><a class="button button2" href="editStudentsPerCourse.html">Edit Students Per Course</a></li>
+                          <ul>
+                      </div>
+      
+                      <a class="dropdown-item accordion" id="accordion" role="button" data-toggle="dropdown" aria-multiselectable="true">Courses</a>
+                      <div class="panel">
+                          <ul>
+                              <li><a class="button button2" href="addCourse.html">Add Course</a></li>
+                              <li><a class="button button2" href="editCourse.html">Edit Course</a></li>
+                              <li><a class="button button2" href="deleteCourse.html">Delete Course</a></li>
+                          <ul>
+                      </div>
+                      
+                      <!-- <div class="dropdown-divider"></div> -->
+                      
+                      <a class="dropdown-item accordion" id="accordion" role="button" data-toggle="dropdown" aria-multiselectable="true">Trainers</a>
+                      <div class="panel">
+                          <ul>
+                              <li><a class="button button2" href="addTrainer.html">Add Trainer</a></li>
+                              <li><a class="button button2" href="addTrainer.html">Edit Trainer</a></li>
+                              <li><a class="button button2" href="deleteTrainer.html">Delete Trainer</a></li>
+                              <li><a class="button button2" href="trainersPerCourse.html">Add Trainers Per Course</a></li>
+                              <li><a class="button button2" href="editTrainersPerCourse.html">Edit Trainers Per Course</a></li>
+                              
+                          <ul>
+                      </div>
+      
+                      <a class="dropdown-item accordion" id="accordion" role="button" data-toggle="dropdown" aria-multiselectable="true">Assignment</a>
+                      <div class="panel">
+                          <ul>
+                            <li><a class="button button2" href="addAssignment.html">Add Assignment</a></li>
+                              <li><a class="button button2" href="editAssignment.html">Edit Assignment</a></li>
+                              <li><a class="button button2" href="deleteAssignment.html">Delete Assignment</a></li>
+                              <li><a class="button button2" href="assignmentsPerCourse.html">Add Assignments Per Course</a></li>
+                              <li><a class="button button2" href="editAssignmentsPerCourse.html">Edit Assigments Per Course</a></li>
+                              <li><a class="button button2" href="editAssignmentPerStudentPerCourse.html">Edit Assigments Per Student Per Course</a></li>
+                              
+                          <ul>
+                      </div>
+      
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Where to Find Us</a>
+                      </div>
+            <li class="nav-item">
+              <a class="nav-link" href=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""></a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+      
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    
+    <h2>Assign Assignments to Students and to Courses</h2>
+    <form>
+        
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="courseSelect">Choose Assignments</label>
+                    <select class="selectpicker form-control show-tick" id="courseSelect" name="courseList" data-style="btn-primary" required multiple>
+                        
+                        <option>Assignment 1</option>
+                        <option>Assignment 2</option>
+                        <option>Assignment 3</option>
+                        <option>Assignment 4</option>
+                        <option>Assignment 5</option>
+                        <option>Assignment 6</option>
+                        
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="courseSelect">Choose Students</label>
+                            <select class="selectpicker form-control show-tick" id="courseSelect" name="courseList" data-style="btn-primary" required multiple>
+                                                 
+                                    <option>Student 1</option>
+                                    <option>Student 2</option>
+                                    <option>Student 3</option>
+                                    <option>Student 4</option>
+                                    <option>Student 5</option>
+                            </select>
+                        </div>
+                    </div>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="courseSelect">Choose Courses</label>
+                    <select class="selectpicker form-control show-tick" id="courseSelect" name="courseList" data-style="btn-primary" required multiple>
+                                         
+                        <option>Course 1</option>
+                        <option>Course 2</option>
+                        <option>Course 3</option>
+                        <option>Course 4</option>
+                        <option>Course 5</option>
+                        <option>Course 6</option>
+                    </select>
+                </div>
+            </div>
+        
+        <!-- <button id="demo" type="text"> -->
+        <button hidden onclick="myFunction()"></button>
+        <button class="btn btn-primary" type="submit">Add</button>    
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='index1.html'">Cancel</button>
+        <button hidden onclick=""></button>
+
+    </form>
+
+</main>
+
+    <script>
+      
+    </script>
+</body>
+</html>
+
+
